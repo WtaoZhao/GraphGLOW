@@ -1,0 +1,41 @@
+
+dataset_name: 'cora+pubmed'
+trans_dataset_name: 'citeseer'
+seed: 42
+
+num_pivots: 1000
+hidden_size: 96
+dropout: 0.6
+feat_adj_dropout: 0.6
+gl_dropout: 0.6
+graph_metric_type: 'weighted_cosine'
+graph_skip_conn: 0.3
+update_adj_ratio: 0.25
+graph_learn_regularization: True
+smoothness_ratio: 0
+degree_ratio: 0
+sparsity_ratio: 0.1
+graph_learn_ratio: 0
+graph_learn_hidden_size: 70
+graph_learn_epsilon: 0
+graph_learn_topk: null
+graph_learn_num_pers: 4 
+graph_hops: 2
+
+optimizer: 'adam'
+learning_rate: 0.01
+weight_decay: 0.0005
+grad_clipping: null
+eary_stop_metric: 'nloss'
+max_iter: 10
+eps_adj: 8.5e-5 
+max_episodes: 3
+
+
+random_seed: 1234
+max_epochs: 10000
+patience: 100
+print_every_epochs: 500
+
+no_cuda: False
+cuda_id: 1
