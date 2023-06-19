@@ -2,6 +2,12 @@
 
 PyTorch implementation of *GraphGLOW: Universal and Generalizable Structure Learning for Graph Neural Networks* [1].
 
+## Introduction
+
+In this work, we attempt to learn a generalizable graph structure learning model which is trained with multiple source graphs and can be directly adapted for inference (without re-training or fine-tuning) on new unseen target graphs. As displayed in the following figure, we achieve this goal through jointly learning a single dataset-shared structure learner and multiple dataset-specific GNNs.
+
+<img src="/Users/zhaowentao/university/实验室/2021_summer/中稿/2023kdd open source/GraphGLOW_open_source/data flow.jpg" style="zoom:80%;" />
+
 ## Environment Set Up
 Install the required packages according to ```requirements.txt```.
 
