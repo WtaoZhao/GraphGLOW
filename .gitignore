@@ -2,7 +2,6 @@
 .DS_Store
 **/__pycache__
 try.py
-**/models
 *.pt
 *.docx
 *.log
